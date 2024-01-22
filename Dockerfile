@@ -1,6 +1,7 @@
 ARG FLUTTER_VER=latest
 FROM ghcr.io/cirruslabs/flutter:${FLUTTER_VER}
 
+RUN sdkmanager --install 'platforms;android-28'
 
 RUN sdkmanager --install 'platforms;android-28' \
   sdkmanager --install 'platforms;android-29' \
